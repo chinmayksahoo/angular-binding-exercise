@@ -1,0 +1,70 @@
+div.form{
+    display: flex;
+    width: 70vw;
+    margin: 2vh 15vw 2vh 15vw;
+    height: 45vh;
+    align-content: center;
+    background-color: lightblue;
+    padding: 2vw 0vw 20vw 20vw;
+    
+}
+
+Insurance{
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+ }
+
+ label{
+    text-align: left;
+    width: 15vw;
+    line-height: 15px;
+    margin-bottom: 10px;
+    font: 1em sans-serif;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  button{
+    background-color: green;
+    border: none;
+    width: 25%;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px 10px;
+    cursor: pointer
+  }
+
+  h5{
+    color: blue;
+    text-align: center;
+  }
+
+  h6{
+    color: darkblue;
+    text-align: center;
+    font-size: 0.5em;
+  }
+
+  div.show-insurance-container{
+    display: flex;
+    background-color: cadetblue;
+    width: 100vw;
+    height: 28vh;
+    margin-right: 2px;
+  }
+
+  div.card{
+    background-color: rgb(207, 223, 191);
+    width: 10vw;
+    border-radius: 10%;
+    border: solid 1px black;
+  }
+
+  div.card-body{
+    box-shadow: darkgoldenrod;
+  }

@@ -1,0 +1,11 @@
+p{
+    display: flex;
+    align-content: center;
+    width: 100vw;
+    height: 8vh;
+    background-color: indigo;
+    color: white;
+    text-align: left;
+    font-size: 2em;
+    padding-left: 10%;
+}

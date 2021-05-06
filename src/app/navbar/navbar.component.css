@@ -1,0 +1,15 @@
+nav{
+    width: 100vw;
+    height: 8vh;
+    font-style: italic;
+    font: 1.5em sans-serif;
+    background-color: indigo;
+}
+
+ul li{
+    display: inline;
+    padding: 10px;
+}
+.dropdown-item{
+    color: black;
+}

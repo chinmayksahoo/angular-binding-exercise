@@ -1,0 +1,39 @@
+<div class="form">
+    <form id="Insurance" action="">
+        <span>
+            <h5>Insert Insurance Details</h5>
+        </span><br>
+        <label for="Id">Insurer Id:</label>
+        <!-- <input type="text" id="id" name="id" (input)="insurance.Id = $event.taget.value" [value]="insurance.Id"
+            onblur="if (this.value == '') {this.value = 'Id';}"
+            onfocus="if (this.value == 'Id') {this.value = '';}"><br><br> -->
+        <input type="text" id="id" name="id" [(ngModel)]="insurance.Id"
+            onblur="if (this.value == '') {this.value = 'ID';}"
+            onfocus="if (this.value == 'ID') {this.value = '';}"><br>
+        <label for="lname">Insurer Name:</label>
+        <input type="text" id="iname" name="iname" [(ngModel)]="insurance.iname"
+            onblur="if (this.value == '') {this.value = 'Name';}"
+            onfocus="if (this.value == 'Name') {this.value = '';}"><br>
+        <label for="lname">Insurance Plan:</label>
+        <input type="text" id="iplan" name="iplan" [(ngModel)]="insurance.iplan"
+            onblur="if (this.value == '') {this.value = 'Plan';}"
+            onfocus="if (this.value == 'Plan') {this.value = '';}"><br>
+        <label for="lname">Insurance Duration:</label>
+        <input type="text" id="idur" name="idur" [(ngModel)]="insurance.idur"
+            onblur="if (this.value == '') {this.value = 'Duration';}"
+            onfocus="if (this.value == 'Duration') {this.value = '';}"><br>
+        <button (click)="AddInsurance()">Add</button>
+        <button (click)="btnClickCan()">Cancel</button>
+    </form>
+</div>
+<div class="show-insurance-container">
+    <div class="card" *ngFor = "let data of insurances">
+        <div class="card-body">
+          <h6 class="card-title">Id: {{data.Id}}</h6>
+          <h6 class="card-title">Name: {{data.iname}}</h6>
+          <h6 class="card-title">Plan: {{data.iplan}}</h6>
+          <h6 class="card-title">Duration: {{data.idur}}</h6>
+          <a href="#" class="btn btn-sm btn-info">More</a>
+        </div>
+      </div>
+</div>
