@@ -21,6 +21,7 @@ export class FormComponent implements OnInit {
   }
 
   AddInsurance(){
+    this.insurance.Id = (this.insurances.length + 1).toString();
     this.insurances.push(this.insurance)
     this.insurance = new Insurance()
     // alert(this.insurance.getData())
